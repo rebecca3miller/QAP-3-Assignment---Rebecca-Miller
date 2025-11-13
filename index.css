@@ -1,0 +1,78 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(232, 123, 69);
+}
+
+.mainbox {
+  width: 1000px;
+  height: 600px; /*will be removed later */
+  background-color: white;
+  border: 3px solid rgb(13, 12, 12);
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/*  General classes for the page */
+.boldtext {
+  font-weight: 700;
+}
+
+.centertext {
+  text-align: center;
+}
+
+
+/* Styles for the header section */
+
+
+/* Styles for the nav section */
+
+
+/* Styles for the main / sections section */
+
+
+/* Styles for the footer section */
+
+table,
+th,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+  padding: 2px;
+  text-align: center;
+  margin-left: 60px;
+}
+
+
+.resultstable {
+  width: 350px;
+  margin: auto;
+}
+
+.resultstable .lefttext {
+  text-align: left;
+}
+
+
+.resultstable .righttext {
+  text-align: right;
+}
+
+
+.resultstable .centertext {
+  text-align: center;
+}
+
+.resultstable .orangeback {
+  background-color: rgb(252, 184, 150);
+  text-align: center;
+  font-weight: 700;
+  padding: 15px;
+}
