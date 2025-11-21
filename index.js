@@ -1,4 +1,4 @@
-// Desc:
+// Desc: Mo's Lawncare Services - Customer Invoice
 // Author: Rebecca Miller
 // Dates: Nov 11, 2025
 
@@ -38,11 +38,11 @@ const ENVIRO_RATE = .014;
 
 // Start main program here.
 
-let CustName = "John Smith" //prompt("Enter the customer name: ");
-let StAdd = "123 Main St." //prompt("Enter the customer street address: ");
-let City = "St. John's" //prompt("Enter the customer city: ");
-let PhoneNum = "709-986-8240" //prompt("Enter the customer phone number (999-999-9999): ");
-let TotSqaureFt = "1700" //prompt("Enter the total square feet for the property (99999): ");
+let CustName = prompt("Enter the customer name: ");
+let StAdd = prompt("Enter the customer street address: ");
+let City = prompt("Enter the customer city: ");
+let PhoneNum = prompt("Enter the customer phone number (999-999-9999): ");
+let TotSqaureFt = prompt("Enter the total square feet for the property (99999): ");
 
 let BorderCost = (TotSqaureFt * 0.04) * BORDER_RATE;
 let MowingCost = (TotSqaureFt * 0.96) * LAWN_MOWING_RATE; 
@@ -129,115 +129,3 @@ document.writeln("<table />")
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-document.writeln("<tr>");
-document.writeln("<td width= '250px' class= 'lefttext'>Item name</td>");
-document.writeln("<td class= 'righttext'>" + ItemName + "</td>");
-document.writeln("</tr>");
-
-document.writeln("<tr>");
-document.writeln("<td class= 'lefttext'>Item cost</td>");
-document.writeln("<td class= 'righttext'>" + cur2Format.format(ItemCost) + "</td>");
-document.writeln("</tr>");
-
-document.writeln("<tr>");
-document.writeln("<td class= 'lefttext'>Number in stock</td>");
-document.writeln("<td class= 'righttext'>" + NumInStock + "</td>");
-document.writeln("</tr>");
-
-document.writeln("<tr>");
-document.writeln("<td><br /></td>");
-document.writeln("<td class= 'lefttext'></td>");
-document.writeln("</tr>");
-
-document.writeln("<tr>");
-document.writeln("<td class= 'lefttext'>Retail price</td>");
-document.writeln("<td class= 'righttext'>" + cur2Format.format(RetPrice) + "</td>");
-document.writeln("</tr>");
-
-document.writeln("<tr>");
-document.writeln("<td><br /></td>");
-document.writeln("<td class= 'lefttext'></td>");
-document.writeln("</tr>");
-
-
-document.writeln("<tr>");
-document.writeln("<td class= 'lefttext'>Total inventory (Cost)</td>");
-document.writeln("<td class= 'righttext'>" + cur2Format.format(TotInvCost) + "</td>");
-document.writeln("</tr>");
-
-document.writeln("<tr>");
-document.writeln("<td class= 'lefttext'>Total inventory (Retail)</td>");
-document.writeln("<td class= 'righttext'>" + cur2Format.format(TotInvRetail) + "</td>");
-document.writeln("</tr>");
-
-document.writeln("<tr>");
-document.writeln("<td><br /></td>");
-document.writeln("<td class= 'lefttext'></td>");
-document.writeln("</tr>");
-
-document.writeln("<tr>");
-document.writeln("<td class= 'lefttext'>Gross margin</td>");
-document.writeln("<td class= 'righttext'>" + cur2Format.format(GrossMargin) + "</td>");
-document.writeln("</tr>");
-
-document.writeln("<tr>");
-document.writeln("<td><br /></td>");
-document.writeln("<td class= 'lefttext'></td>");
-document.writeln("</tr>");
-
-document.writeln("<tr>");
-document.writeln("<td class= 'lefttext'>10% off price</td>");
-document.writeln("<td class= 'righttext'>" + cur2Format.format(Sale10Off) + "</td>");
-document.writeln("</tr>");
-
-document.writeln("<tr>");
-document.writeln("<td class= 'lefttext'>25% off price</td>");
-document.writeln("<td class= 'righttext'>" + cur2Format.format(Sale25Off) + "</td>");
-document.writeln("</tr>");
-
-document.writeln("<tr>");
-document.writeln("<td class= 'lefttext'>33% off price</td>");
-document.writeln("<td class= 'righttext'>" + cur2Format.format(Sale33Off) + "</td>");
-document.writeln("</tr>");
-
-document.writeln("<tr>");
-document.writeln("<td class= 'lefttext'>50% off price</td>");
-document.writeln("<td class= 'righttext'>" + cur2Format.format(Sale50Off) + "</td>");
-document.writeln("</tr>");
-
-document.writeln("<tr>");
-document.writeln("<td colspan= '2' class= 'orangecenterrow'><br /></td>");
-document.writeln("</tr>");
-
-document.writeln("</table>");
-*/
