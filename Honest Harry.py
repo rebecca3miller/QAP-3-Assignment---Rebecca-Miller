@@ -36,6 +36,8 @@ while True:
         CustFName =       input("Enter the customer first name:                             ").title()
         if VD.valid_names(CustFName):
             break
+        if CustFName.upper() == "END":
+            exit()
     while True:
         CustLName =       input("Enter the customer last name:                              ").title()
         if VD.valid_names(CustLName):
@@ -72,7 +74,7 @@ while True:
         if VD.valid_names(SalesPersonName):
             break
 
-    ReceiptId = CustFName[0] + CustLName[0] + "-" + PlateNum[3:7] + "-" + PhoneNum[5:11]
+    ReceiptId = CustFName[0] + CustLName[0] + "-" + PlateNum[3:7] + "-" + PhoneNum[6:11]
 
     FormattedPhoneNum = f"({PhoneNum[:3]})-{PhoneNum[3:6]}-{PhoneNum[6:]}"
 
@@ -139,7 +141,7 @@ while True:
     FirstPaymentDate = datetime.datetime(year, month, 1)
 
     # Create a loop for payment schedule.
-    
+
     for Year in range(1, YEARS_TO_PAY + 1):
         NumPayments = Year * 12
         FinancingFeeYear = FINANCE_FEE * Year
@@ -165,7 +167,9 @@ while True:
     print()
 
     # Write the values to a data file for storage.
-
+    Continue = input("Would you like to continue with another receipt? (Y/N): ").upper()
+    if Continue == "N":
+        break
 
 
     # Any housekeeping duties at the end of the program.

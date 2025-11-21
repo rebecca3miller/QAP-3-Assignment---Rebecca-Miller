@@ -2,7 +2,6 @@
 
 # License plate validation.
 
-
 def valid_plate(PlateNum):
     all_char = set("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
     if PlateNum == "":
@@ -20,6 +19,7 @@ def valid_plate(PlateNum):
     else:
         return True
 
+# Phone number validation.
     
 def valid_phone_num(PhoneNum):
     all_char = set("1234567890")
@@ -35,6 +35,7 @@ def valid_phone_num(PhoneNum):
     else:
         return True
 
+# Names validation.
     
 def valid_names(Name):
     all_char = set("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz")
@@ -47,6 +48,7 @@ def valid_names(Name):
     else:
         return True
 
+# Price validation.
 
 def valid_price(Price):
     if Price == "":
