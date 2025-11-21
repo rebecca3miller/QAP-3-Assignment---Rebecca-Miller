@@ -4,7 +4,7 @@
 
 
 # Define required libraries.
-
+import Validations as VD
 
 
 # Define program constants.
@@ -23,11 +23,18 @@ FINANCE_FEE = 39.99
 while True:
     
     # Gather user inputs.
-
-    CustFName = input("Enter the customer first name: ").title()
+    while True:
+        CustFName = input("Enter the customer first name: ").title()
+        if VD.Valid_Names(CustFName):
+            break
     CustLName = input("Enter the customer last name: ").title()
     PhoneNum = input("Enter the customer phone number (999-999-9999): ")
-    PlateNum = input("Enter the customer plate number (XXX999): ").capitalize()
+    while True:
+        PlateNum = input("Enter the customer plate number (XXX999): ").upper()
+        if VD.valid_plate(PlateNum):
+            break
+        
+
 
     CarMake = input("Enter the car make (Toyota): ")
     CarModel = input("Enter the car model (Corola): ")
